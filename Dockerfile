@@ -20,7 +20,7 @@ ENV BITNAMI_APP_NAME="tomcat" \
     TOMCAT_SHUTDOWN_PORT_NUMBER="8005" \
     TOMCAT_USERNAME="user"
 
-COPY /var/lib/jenkins/workspace/teste-docker/projeto-web-0.0.1-SNAPSHOT.war /opt/bitnami/tomcat/webapps
+COPY ./projeto-web-0.0.1-SNAPSHOT.war /opt/bitnami/tomcat/webapps
 
 EXPOSE 8081
 
