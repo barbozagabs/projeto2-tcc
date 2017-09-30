@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  tomcat:
+    image: 'tomcat:8.0'
+    labels:
+      kompose.service.type: nodeport
+    ports:
+      - '8081:8081'
+    volumes:
+      - 'tomcat_data:/bitnami'
+
+volumes:
+  tomcat_data:
+    driver: local
