@@ -20,7 +20,6 @@ ENV BITNAMI_APP_NAME="tomcat" \
     TOMCAT_SHUTDOWN_PORT_NUMBER="8005" \
     TOMCAT_USERNAME="user"
 
-RUN rm -fr /opt/bitnami/tomcat/webapps/*.war
 COPY ./*.war /opt/bitnami/tomcat/webapps
 
 EXPOSE 8081
